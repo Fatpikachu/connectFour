@@ -43,7 +43,7 @@
     border-radius: 50%;
     /* background-color: blue;
     border: white; */
-    background: radial-gradient(circle at 100px 100px, rgb(8, 19, 117), rgba(110, 123, 194, 0.473))
+    background: radial-gradient(circle at 100px 100px, rgb(5, 13, 83), rgba(88, 103, 184, 0.473))
 }
 
 .red {
@@ -52,7 +52,7 @@
     border-radius: 50%;
     /* background-color: red;
     border: white; */
-    background: radial-gradient(circle at 100px 100px, rgb(113, 22, 10), rgba(232, 182, 170, 0.473))
+    background: radial-gradient(circle at 100px 100px, rgb(83, 14, 5), rgba(203, 120, 100, 0.473))
 }
 
 .description {
@@ -72,7 +72,11 @@ button {
     
 }
 
-.pulsating {
+.highlight {
+    background: rgb(245, 230, 201);
+}
+
+.highlight > div {
     animation: Pulsate 2s infinite;
 }
 

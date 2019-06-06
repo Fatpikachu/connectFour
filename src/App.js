@@ -44,7 +44,7 @@ class App extends Component {
           $('#'+ i + yCord + ' > div').addClass('blue')
           this.setState({board: tmpBoard}, ((i, yCord)=>{
             if(this.checkWin(i, yCord)){
-              $('#'+ i + yCord + ' > div').addClass('pulsating')
+              $('#'+ i + yCord).addClass('highlight')
               alert('Blue wins!')
             }
             this.setState({player: 2}, ()=>{
@@ -56,7 +56,7 @@ class App extends Component {
           $('#'+ i + yCord + ' > div').addClass('red')
           this.setState({board: tmpBoard}, ((i, yCord)=>{
             if(this.checkWin(i, yCord)){
-              $('#'+ i + yCord + ' > div').addClass('pulsating')
+              $('#'+ i + yCord).addClass('highlight')
               alert('Red wins!')
             }
             this.setState({player: 1}, ()=>{
@@ -185,22 +185,22 @@ class App extends Component {
     let lD = this.lDiagonal(x, y);
     if(horz.win) {
       for(let i = 0 ; i < horz.hit.length; i ++){
-        $('#'+ horz.hit[i][0] + horz.hit[i][1] + ' > div').addClass('pulsating')
+        $('#'+ horz.hit[i][0] + horz.hit[i][1]).addClass('highlight')
       }
       return true;
     } else if(vert.win) {
       for(let i = 0 ; i < vert.hit.length; i ++){
-        $('#'+ vert.hit[i][0] + vert.hit[i][1] + ' > div').addClass('pulsating')
+        $('#'+ vert.hit[i][0] + vert.hit[i][1]).addClass('highlight')
       }
       return true;
     } else if(rD.win) {
       for(let i = 0 ; i < rD.hit.length; i ++){
-        $('#'+ rD.hit[i][0] + rD.hit[i][1] + ' > div').addClass('pulsating')
+        $('#'+ rD.hit[i][0] + rD.hit[i][1]).addClass('highlight')
       }
       return true;
     } else if(lD.win){
       for(let i = 0 ; i < lD.hit.length; i ++){
-        $('#'+ lD.hit[i][0] + lD.hit[i][1] + ' > div').addClass('pulsating')
+        $('#'+ lD.hit[i][0] + lD.hit[i][1]).addClass('highlight')
       }
       return true;
     }
@@ -208,7 +208,8 @@ class App extends Component {
   }
 
   reset(){
-    $('.circle').removeClass('blue red pulsating');
+    $('.circle').removeClass('blue red');
+    $('.square').removeClass('highlight');
     this.setState({board: [ [0, 0, 0, 0, 0, 0, 0],
               [0, 0, 0, 0, 0, 0, 0],
               [0, 0, 0, 0, 0, 0, 0],
