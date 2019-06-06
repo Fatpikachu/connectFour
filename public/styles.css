@@ -1,0 +1,123 @@
+.game {
+    margin-top: 2em;
+    margin-left: 5em;
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.start{ 
+    border: 2px solid black;
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    display: inline-block;
+    opacity: 0.3
+}
+/* 
+#ball {
+    width: 60px;
+    height: 60px;
+    background: orange;
+    border: 1px solid grey;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    pointer-events: none;
+} */
+
+
+.blue {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    /* background-color: blue;
+    border: white; */
+    background: radial-gradient(circle at 100px 100px, rgb(8, 19, 117), rgba(110, 123, 194, 0.473))
+}
+
+.red {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    /* background-color: red;
+    border: white; */
+    background: radial-gradient(circle at 100px 100px, rgb(113, 22, 10), rgba(232, 182, 170, 0.473))
+}
+
+.description {
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(33, 124, 51); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 1em;
+    
+}
+
+.pulsating {
+    animation: Pulsate 2s infinite;
+}
+
+.title {
+    font-size: 5em;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+}
+
+.rightPanel{
+    float: right;
+    text-align: center;
+    margin-right: 2em;
+    margin-top: 2em;
+}
+
+.pTurn{
+    font-size: 50px;
+    font-family: 'Comic Sans MS';
+    margin-top: 3em;
+}
+
+.info{
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 10px; 
+    width: 500px;
+    height: 80px;
+}
+
+.pTurn.p1::before {
+    color: rgb(29, 48, 218);
+    content: "Blue";
+}
+
+.pTurn.p2::before {
+    color: rgb(189, 37, 17);
+    content: "Red";
+}
+
+@keyframes Pulsate {
+    from { opacity: 1.3; }
+    50% { opacity: .2; }
+    to { opacity: 1; }
+}
