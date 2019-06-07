@@ -22,27 +22,12 @@
     display: inline-block;
     opacity: 0.3
 }
-/* 
-#ball {
-    width: 60px;
-    height: 60px;
-    background: orange;
-    border: 1px solid grey;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -10px 0 0 -10px;
-    pointer-events: none;
-} */
 
 
 .blue {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    /* background-color: blue;
-    border: white; */
     background: radial-gradient(circle at 100px 100px, rgb(5, 13, 83), rgba(88, 103, 184, 0.473))
 }
 
@@ -50,8 +35,6 @@
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    /* background-color: red;
-    border: white; */
     background: radial-gradient(circle at 100px 100px, rgb(83, 14, 5), rgba(203, 120, 100, 0.473))
 }
 
@@ -66,10 +49,10 @@ button {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     font-size: 16px;
-    margin-top: 1em;
-    
+    margin: 0 auto;
+    margin-top: 2em;
 }
 
 .highlight {
@@ -97,7 +80,8 @@ button {
 .pTurn{
     font-size: 50px;
     font-family: 'Comic Sans MS';
-    margin-top: 3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .info{
@@ -113,11 +97,13 @@ button {
 .pTurn.p1::before {
     color: rgb(29, 48, 218);
     content: "Blue";
+
 }
 
 .pTurn.p2::before {
     color: rgb(189, 37, 17);
     content: "Red";
+   
 }
 
 @keyframes Pulsate {
