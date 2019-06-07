@@ -1,3 +1,18 @@
+.title-container{
+    height: 100px;
+    background-color: rgb(85, 85, 233);
+    margin-bottom: 4em;
+}
+.title {
+    font-size: 96px;
+    text-align: center;
+    font-family: 'Rubik';
+    font-weight: bold;
+    color: white;
+    position: relative;
+    bottom: -10px;
+}
+
 .game {
     margin-top: 2em;
     margin-left: 5em;
@@ -6,7 +21,7 @@
 .square {
     width: 60px;
     height: 60px;
-    border: 2px solid black;
+    border: 3px solid rgb(94, 90, 90);
     padding: 5px;
     margin-top: -5px;
     justify-content: center;
@@ -15,12 +30,12 @@
 }
 
 .start{ 
-    border: 2px solid black;
+    border: 3px solid black;
     height: 60px;
     width: 60px;
     padding: 5px;
     display: inline-block;
-    opacity: 0.3
+    opacity: 0.2
 }
 
 
@@ -42,17 +57,30 @@
     font-size: 20px;
 }
 
-button {
-    background-color: rgb(33, 124, 51); /* Green */
+.reset {
     border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    margin: 0 auto;
-    margin-top: 2em;
+    background: #383737;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;    
+    font-family: 'Roboto'; 
+    position:relative;
+    left: 38%;
+    margin-top: 20px;
+     
+}
+.reset:hover {
+    color: #383737 !important;
+    font-weight: 700 !important;
+    letter-spacing: 4px;
+    background: none;
+    box-shadow: 0px 0px #888888;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.5s ease 0s;
 }
 
 .highlight {
@@ -63,35 +91,29 @@ button {
     animation: Pulsate 2s infinite;
 }
 
-.title {
-    font-size: 5em;
-    text-align: center;
-    font-family: 'Comic Sans MS';
-    font-weight: bold;
-}
-
 .rightPanel{
     float: right;
     text-align: center;
-    margin-right: 2em;
+    margin-right: 5em;
     margin-top: 2em;
 }
 
 .pTurn{
     font-size: 50px;
-    font-family: 'Comic Sans MS';
+    font-family: 'Roboto';
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
 .info{
-    font-size: 20px;
-    font-family: 'Comic Sans MS';
+    font-size: 28px;
+    font-family: 'Concert One';
     border-radius: 25px;
     border: 2px solid black;
     padding: 10px; 
     width: 500px;
     height: 80px;
+    color: #383737;
 }
 
 .pTurn.p1::before {

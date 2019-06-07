@@ -239,7 +239,9 @@ class App extends Component {
     let player2 = <div className='pTurn p2'>'s turn</div>
     return (
       <React.Fragment>
-      <div className='title'>Konnect 4</div>
+      <div className='title-container'>
+        <div className='title'>Konnect 4</div>
+      </div>
       <div className='rightPanel'>
         <div className='info'>
           2 Players compete to connect four of their respective colors to win.
@@ -251,7 +253,8 @@ class App extends Component {
       <div className='game'>
         <div>{top}</div>
         <div>{board}</div>
-        <button onClick={this.reset.bind(this)}>Reset</button>
+        {/* <button onClick={this.reset.bind(this)}>Reset</button> */}
+        <a class="reset" target="_blank" onClick={this.reset.bind(this)} >Reset</a>
       </div>
       </React.Fragment>
     );
