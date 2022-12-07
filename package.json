@@ -5,7 +5,7 @@
   "dependencies": {
     "body": "^5.1.0",
     "cors": "^2.8.4",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "jquery": "^3.4.1",
     "nodemon": "^1.15.1",
     "parser": "^0.1.4",
